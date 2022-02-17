@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind css cdn is here -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font is here  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<!-- custom css link  -->
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/0b9fc04128.js" crossorigin="anonymous"></script>
     <title> Month Summary</title>
 
 </head>
 
 <body class="p-1">
     <header>
-        <h1 class="text-4xl text-center mt-10 text-sky-700">Month Summary</h1>
+        <h1 class="text-4xl text-center mt-10 text-sky-700">Month Summary
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+        </h1>
 
     </header>
     <main>
@@ -32,37 +37,36 @@
 
                     <h4 class="text-center mt-4 mb-3 text-2xl">Income</h4>
                     <div class="">
-                        <p id="incomeError" class="text-red-500 hidden" >Please enter income Amount in Positve number</p>
+                        <p id="incomeError" class="text-red-500 hidden">Please enter income Amount in Positve number</p>
                         <label for="incomeField">Income:</label>
                         <input id="incomeField" type="text"
                             class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
                     </div>
                 </div>
                 <div class="flex flex-col items-center justify-center gap-3">
-                    
+
                     <h3 class="mt-5 mb-1 text-2xl">Expenses</h3>
                     <div>
-                        <p id="expensesError" class="text-red-500 hidden" >Please Fill all three fields in Positve number</p>
+                        <p id="expensesError" class="text-red-500 hidden">Please Fill all three fields in Positve number
+                        </p>
                         <label for="foodField">Food:</label>
-                        <input id="foodField" type="text"
-                            class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
+                        <input id="foodField" type="text" class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
                     </div>
                     <div>
                         <label for="rentField">Rent : </label>
-                        <input id="rentField" type="text"
-                            class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
+                        <input id="rentField" type="text" class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
                     </div>
                     <div>
                         <label for="clothField">Cloth:</label>
-                        <input id="clothField" type="text"
-                            class="border py-1 rounded bg-gray-200 border-gray-300 w-52">
+                        <input id="clothField" type="text" class="border py-1 rounded bg-gray-200 border-gray-300 w-52">
                     </div>
-                    <p id="calculateError" class="text-red-500 hidden">insufficient Balance. Decrease Expenses or Earn more</p>
+                    <p id="calculateError" class="text-red-500 hidden">insufficient Balance. Decrease Expenses or Earn
+                        more</p>
                     <button id="calculateBtn" class="py-2 px-8 rounded bg-blue-500 text-white">Calculate</button>
 
 
                 </div>
-            <!-- Calculate total  -->
+                <!-- Calculate total  -->
 
                 <div class="flex flex-col items-center justify-center gap-5 my-8">
                     <h3 class="text-2xl">Total Expenses: <span id="totalExpenses">0000</span></h3>
@@ -70,9 +74,9 @@
                 </div>
 
                 <div>
-                    <p id="saveError" class="text-red-500 hidden" >Please first complete calculation</p>
-                    <p id="cantSave" class="text-red-500 hidden" >Balance is Less than Your entered saving amout</p>
-                    <p id="minus" class="text-red-500 hidden" >Enter Positve number</p>
+                    <p id="saveError" class="text-red-500 hidden">Please first complete calculation</p>
+                    <p id="cantSave" class="text-red-500 hidden">Balance is Less than Your entered saving amout</p>
+                    <p id="minus" class="text-red-500 hidden">Enter Positve number</p>
                     save:
                     <input id="savingField" class=" border  py-1 rounded bg-gray-200 border-gray-300 w-52" type="text">%
                     <button id="savingBtn" class="py-2 px-8 rounded bg-blue-500 text-white">Save</button>
