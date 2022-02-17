@@ -1,8 +1,6 @@
 document.getElementById("calculateBtn").addEventListener('click', function () {
-    // calling getReadyInputValue function for get input 
     const income = getReadyInputValue("incomeField", true)
     const expenses = totalExpenses()
-    console.log(expenses);
     const balance = balanceCount(income, expenses);
 
     if (isNaN(income)||income<0) {
@@ -16,7 +14,6 @@ document.getElementById("calculateBtn").addEventListener('click', function () {
         error("calculateError", true)
         error("expensesError", false)
         error("incomeError", false)
-        // document.getElementById("calculateError").style.display="block"
     }
     else {
         // setting expenses and balance
@@ -104,7 +101,7 @@ function savingAmountUpdate(income) {
 document.getElementById("savingBtn").addEventListener("click", function () {
     const balance = document.getElementById("totalBalance");
     const balanceNum = parseFloat(balance.innerText)
-    console.log(balanceNum);
+   
     const savingAmount = document.getElementById("savingAmount")
     if (balanceNum <= 0) {
         error("saveError", true)

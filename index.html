@@ -20,6 +20,7 @@
 </head>
 
 <body class="p-1">
+    <!-- Top Text -->
     <header>
         <h1 class="text-4xl text-center mt-10 text-sky-700">Month Summary
             <i class="fa-solid fa-money-bill-1-wave"></i>
@@ -31,23 +32,24 @@
             <div class=" text-center">
                 <img src="./image.jpg" alt="calculator picture">
             </div>
-            <!-- calculation section  -->
+            <!-- income section  -->
             <div class="bg-gray-100">
                 <div class="flex flex-col items-center justify-center gap-3">
 
                     <h4 class="text-center mt-4 mb-3 text-2xl">Income</h4>
                     <div class="">
-                        <p id="incomeError" class="text-red-500 hidden">Please enter income Amount in Positve number</p>
+                        <p id="incomeError" class="text-red-500 hidden">Please enter income Amount in Positive number</p>
                         <label for="incomeField">Income:</label>
                         <input id="incomeField" type="text"
                             class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
                     </div>
                 </div>
+                <!-- expenses section starting -->
                 <div class="flex flex-col items-center justify-center gap-3">
 
                     <h3 class="mt-5 mb-1 text-2xl">Expenses</h3>
                     <div>
-                        <p id="expensesError" class="text-red-500 hidden">Please Fill all three fields in Positve number
+                        <p id="expensesError" class="text-red-500 hidden">Please Fill all three fields in Positive number
                         </p>
                         <label for="foodField">Food:</label>
                         <input id="foodField" type="text" class="border  py-1 rounded bg-gray-200 border-gray-300 w-52">
@@ -75,13 +77,13 @@
 
                 <div>
                     <p id="saveError" class="text-red-500 hidden">Please first complete calculation</p>
-                    <p id="cantSave" class="text-red-500 hidden">Balance is Less than Your entered saving amout</p>
-                    <p id="minus" class="text-red-500 hidden">Enter Positve number</p>
+                    <p id="cantSave" class="text-red-500 hidden">Balance is Less than Your entered saving amount</p>
+                    <p id="minus" class="text-red-500 hidden">Enter Positive number</p>
                     save:
                     <input id="savingField" class=" border  py-1 rounded bg-gray-200 border-gray-300 w-52" type="text">%
                     <button id="savingBtn" class="py-2 px-8 rounded bg-blue-500 text-white">Save</button>
                 </div>
-                <!-- last div -->
+                <!-- Remaining balance -->
                 <div class="text-center mt-5">
                     <p>Saving Amount: <span id="savingAmount">000</span></p>
                     <p class="text-2xl">Remaining Balance: <span id="RemainingBalance">000</span></p>
