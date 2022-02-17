@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css cdn is here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> Month Summary</title>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl text-center mt-10 text-sky-700">Month Summary</h1>
+
+    </header>
+    <main>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4 md:w-3/4 mx-auto mt-8 ">
+            <div class=" text-center">
+                <img src="./image.jpg" alt="calculator picture">
+            </div>
+            <div class="bg-gray-100">
+                <div class="flex flex-col items-center justify-center gap-3">
+
+                    <h4 class="text-center mt-4 mb-3 text-2xl">Income</h4>
+                    <div class="">
+                        <label for="incomeField">Income:</label>
+                        <input id="incomeField " type="text"
+                            class="border ml-3 py-1 rounded bg-gray-200 border-gray-300 w-52">
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <h3 class="mt-5 mb-1 text-2xl">Expenses</h3>
+                    <div>
+                        <label for="foodField">Food:</label>
+                        <input id="foodField " type="text"
+                            class="border ml-3 py-1 rounded bg-gray-200 border-gray-300 w-52">
+                    </div>
+                    <div>
+                        <label for="rentField">Rent : </label>
+                        <input id="rentField" type="text"
+                            class="border ml-3 py-1 rounded bg-gray-200 border-gray-300 w-52">
+                    </div>
+                    <div>
+                        <label for="clothField">Cloth:</label>
+                        <input id="clothField" type="text"
+                            class="border ml-3 py-1 rounded bg-gray-200 border-gray-300 w-52">
+                    </div>
+                    <button id="calculateBtn" class="py-2 px-8 rounded bg-blue-500 text-white">Calculate</button>
+
+
+                </div>
+            <!-- Calculate total  -->
+
+                <div class="flex flex-col items-center justify-center gap-5 my-8">
+                    <h3 class="text-2xl">Total Expenses: <span id="totalExpenses">0000</span></h3>
+                    <h3 class="text-2xl">Balance: <span id="totalBalance">0000</span></h3>
+                </div>
+
+                <div>
+                    save:
+                    <input class=" border md:ml-3 py-1 rounded bg-gray-200 border-gray-300 w-52" type="text">%
+                    <button id="saveBtn" class="py-2 px-8 rounded bg-blue-500 text-white">Save</button>
+                </div>
+                <!-- last div -->
+                <div class="text-center mt-5">
+                    <p>Saving Amount: <span id="savingAmount">0000</span></p>
+                    <p class="text-2xl">Remaining Balance: <span id="savingAmount">0000</span></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
