@@ -100,6 +100,7 @@ function savingAmountUpdate(income) {
         
     
 }
+// saving percentage process starting
 document.getElementById("savingBtn").addEventListener("click", function () {
     const balance = document.getElementById("totalBalance");
     const balanceNum = parseFloat(balance.innerText)
